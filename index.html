@@ -13,9 +13,10 @@
 <body>
     
     <!-- header section starts -->
-    <header id="header">
+    <header id="header" class="my-4">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
+                <!-- logo -->
                 <a href="" class="navbar-brand">
                     <h2 class="fw-bold"><span class="text-primary">Tech</span> Hub</h2>
                 </a>
@@ -55,20 +56,69 @@
     <!-- banner section starts -->
     <section id="banner">
         <div class="container">
-            <div class="carousel slide" id="slider">
+            <!-- carousel starts -->
+            <div class="carousel slide rounded overflow-hidden" data-bs-ride="carousel" id="slider">
                 <div class="carousel-inner">
+                    <!-- carousel item 1 -->
                     <div class="carousel-item active" style="height: 80vh">
                         <img src="./images/cover/cover-1.png" class="img-fluid w-100 h-100 ">
 
-                        <div class="carousel-caption w-100 h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-50 position-absolute top-0 start-0">
-                            <div class="w-50 w-sm-100">
-                            <h1 class="fw-bold px-5">Get Started Digital Learning</h1>
-                            <p>It is a long established fact that a reader will be distracted by the readable 
+                        <!-- carousel caption -->
+                        <div class="carousel-caption w-100 h-100 d-flex flex-column justify-content-center align-items-center bg-dark bg-opacity-50 position-absolute top-0 start-0">
+                            
+                            <div class="caption-content">
+                            <h1 class="fw-bold mb-4">Get Started Digital <br> Learning</h1>
+                            <p class="mb-4">It is a long established fact that a reader will be distracted by the readable 
                             content of a page when looking at its layout</p>
-                            <button class="btn btn-success">Get Started</button>
+                            <button class="btn btn-success rounded-1">Get Started</button>
                             </div>
+                            
                         </div>
                     </div>
+                    
+                    <!-- carousel item 2 -->
+                    <div class="carousel-item" style="height: 80vh">
+                        <img src="./images/cover/cover-2.jpg" class="img-fluid w-100 h-100 ">
+
+                        <!-- carousel caption -->
+                        <div class="carousel-caption w-100 h-100 d-flex flex-column justify-content-center align-items-center bg-dark bg-opacity-50 position-absolute top-0 start-0">
+                            
+                            <div class="caption-content">
+                                <h1 class="fw-bold mb-4">Get Started Digital <br> Learning</h1>
+                                <p class="mb-4">It is a long established fact that a reader will be distracted by the readable 
+                                content of a page when looking at its layout</p>
+                                <button class="btn btn-success rounded-1">Get Started</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <!-- carousel item 3 -->
+                    <div class="carousel-item" style="height: 80vh">
+                        <img src="./images/cover/cover-3.jpg" class="img-fluid w-100 h-100 ">
+
+                        <!-- carousel caption -->
+                        <div class="carousel-caption w-100 h-100 d-flex flex-column justify-content-center align-items-center bg-dark bg-opacity-50 position-absolute top-0 start-0">
+                            
+                            <div class="caption-content">
+                                <h1 class="fw-bold mb-4">Get Started Digital <br> Learning</h1>
+                                <p class="mb-4">It is a long established fact that a reader will be distracted by the readable 
+                                content of a page when looking at its layout</p>
+                                <button class="btn btn-success rounded-1">Get Started</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <!-- carousel control icon -->
+                    <!-- carousel control prev -->
+                    <button class="carousel-control-prev" data-bs-target="#slider" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <!-- carousel control next -->
+                    <button class="carousel-control-next" data-bs-target="#slider" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
                 </div>
             </div>
         </div>
