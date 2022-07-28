@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Hub</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- header section starts -->
+    <header id="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="" class="navbar-brand">
+                    <h2 class="fw-bold"><span class="text-primary">Tech</span> Hub</h2>
+                </a>
+
+                <!-- login registration -->
+                <div class="order-lg-last d-none d-sm-block">
+                    <button class="btn btn-success rounded-1">Login</button>
+                    <button class="btn btn-danger rounded-1">Register</button>
+                </div>
+
+                <!-- toggle button -->
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navBar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- nav menu -->
+                <div class="collapse navbar-collapse" id="navBar">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a href="" class="nav-link fw-bold">Home</a></li>
+                        <li class="nav-item"><a href="" class="nav-link fw-bold">Courses</a></li>
+                        <li class="nav-item"><a href="" class="nav-link fw-bold">About</a></li>
+                        <li class="nav-item"><a href="" class="nav-link fw-bold">Success</a></li>
+                        <li class="nav-item"><a href="" class="nav-link fw-bold">Contact</a></li>
+                        <li class="nav-item"><a href="" class="nav-link fw-bold">FAQ's</a></li>
+
+                        <!-- lign/reg mobile view -->
+                        <li class="nav-item"><a href="" class=" btn btn-success mt-3 d-sm-none">Login</a></li>
+                        <li class="nav-item"><a href="" class="btn btn-danger mt-3 d-sm-none">Register</a></li>
+                    </ul>
+                </div>
+                             
+            </div>
+        </nav>
+    </header>
+    <!-- header section ends -->
+
+    <!-- banner section starts -->
+    <section id="banner">
+        <div class="container">
+            <div class="carousel slide" id="slider">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="height: 80vh">
+                        <img src="./images/cover/cover-1.png" class="img-fluid w-100 h-100 ">
+
+                        <div class="carousel-caption w-100 h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-50 position-absolute top-0 start-0">
+                            <div class="w-50 w-sm-100">
+                            <h1 class="fw-bold px-5">Get Started Digital Learning</h1>
+                            <p>It is a long established fact that a reader will be distracted by the readable 
+                            content of a page when looking at its layout</p>
+                            <button class="btn btn-success">Get Started</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner section ends -->
+
+
+
+    <script src="./bootstrap.bundle.min.js"></script>
+</body>
+</html>
