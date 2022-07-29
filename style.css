@@ -1,3 +1,6 @@
+#header{
+    z-index: 100;
+}
 .carousel-item > img,
 .card-body img{
     object-fit: cover;

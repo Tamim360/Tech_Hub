@@ -10,10 +10,10 @@
     <!-- custom css -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navBar">
     
     <!-- header section starts -->
-    <header id="header" class="my-4">
+    <header id="header" class="my-4 position-sticky top-0 bg-white">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <!-- logo -->
@@ -35,12 +35,12 @@
                 <!-- nav menu -->
                 <div class="collapse navbar-collapse" id="navBar">
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a href="" class="nav-link fw-bold">Home</a></li>
-                        <li class="nav-item"><a href="" class="nav-link fw-bold">Courses</a></li>
-                        <li class="nav-item"><a href="" class="nav-link fw-bold">About</a></li>
-                        <li class="nav-item"><a href="" class="nav-link fw-bold">Success</a></li>
-                        <li class="nav-item"><a href="" class="nav-link fw-bold">Contact</a></li>
-                        <li class="nav-item"><a href="" class="nav-link fw-bold">FAQ's</a></li>
+                        <li class="nav-item"><a href="#banner" class="nav-link fw-bold">Home</a></li>
+                        <li class="nav-item"><a href="#courses" class="nav-link fw-bold">Courses</a></li>
+                        <li class="nav-item"><a href="#explore" class="nav-link fw-bold">About</a></li>
+                        <li class="nav-item"><a href="#success" class="nav-link fw-bold">Success</a></li>
+                        <li class="nav-item"><a href="#footer" class="nav-link fw-bold">Contact</a></li>
+                        <li class="nav-item"><a href="#faq" class="nav-link fw-bold">FAQ's</a></li>
 
                         <!-- lign/reg mobile view -->
                         <li class="nav-item"><a href="" class=" btn btn-primary mt-3 d-sm-none shadow-none" data-bs-toggle="modal" data-bs-target="#login">Login</a></li>
@@ -455,6 +455,8 @@
     <!-- feedback section starts -->
     <section id="feedback">
         <div class="container">
+            <h2 class="text-center fw-bold">Some students feedback</h2>
+            <p class="text-muted text-center">Our students is very happy with our quality. Let's see some of our student's feedback.</p>
             <div class="carousel slide" data-bs-ride="carousel" id="studentsFeedback">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -680,7 +682,7 @@
     <!-- faq's ends -->
 
     <!-- company section starts -->
-    <section id="company" class="d-none d-lg-block">
+    <section id="company" class="d-none d-lg-block mb-3">
         <div class="container text-center py-3">
             <h2 class="fw-bold mb-3">Trusted by over 800+ companies</h2>
             <div>
