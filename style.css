@@ -21,7 +21,6 @@
 .carousel-caption > .caption-content{
     max-width: 70%;
 }
-
 @media screen and (max-width: 576px) {
     #courses .course-thumb img{
         object-fit: cover;
@@ -29,8 +28,7 @@
     }
     #courses .card-body .col-sm-4{
         height: 250px;
-    }
-    
+    }   
 }
 @media screen and (max-width: 768px) {
     #explore img{
