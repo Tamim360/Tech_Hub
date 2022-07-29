@@ -20,17 +20,15 @@
 }
 
 @media screen and (max-width: 576px) {
-    .card-body  div:nth-child(1){
-        height: 250px;
-    }
-    .card-body img{
+    #courses .course-thumb img{
         height: 250px;
         object-fit: cover;
         object-position: top;
+        /* -webkit-aspect-ratio: 16 / 9; */
     }
-    .card-body{
+    /* .card-body{
         height: 420px;
-    }
+    } */
     
 }
 @media screen and (max-width: 768px) {
