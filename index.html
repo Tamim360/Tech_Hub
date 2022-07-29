@@ -594,53 +594,95 @@
             <p class="text-muted mb-5">Here are some frequently asked questions's answers that people always ask.</p>
 
             <div class="accordion accordion-flush" id="faqAnswers">
+
+                <!-- What is difference between flexbox and grid? -->
                 <div class="accordion-item">
                   <h2 class="accordion-header mb-2 border rounded overflow-hidden" id="headingOne">
                     <button class="accordion-button shadow-none fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        CSS Grid vs. Flexbox: Which Should You Use and When?
+                        What is difference between flexbox and grid?
                     </button>
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAnswers">
                     <div class="accordion-body">
-                      <p class="text-muted">The most important thing to know is that flexbox is one-dimensional, while CSS Grid is two-dimensional. And Grid is for full-page layouts and flexbox is for smaller components.</p>
+                      <p class="text-muted text-start ps-3 border-start border-primary"> <strong class="text-primary">Flexbox can optionally wrap.</strong> If we allow a flex container to wrap, they will wrap down onto another row when the flex items fill a row. Where they line up on the next row is independent of what happenned on the first row, allowing for a masonry-like look. <br>
+
+                        <strong class="text-primary">Grid</strong> can also optionally wrap (if we allow auto filling) in the sense that items can fill a row and move to the new row (or auto place themselves), but as they do, they will fall along the same grid lines all the other elements do.</p>
+                        <br> <br>
+                      <p class="text-muted text-start ps-3 border-start border-primary"> <strong class="text-primary">You could think of flexbox as “one dimensional.”</strong> While flexbox can make rows and columns in the sense that it allows elements to wrap, there’s no way to declaratively control where elements end up since the elements merely push along a single axis and then wrap or not wrap accordingly. They do as they do, if you will, along a one-dimensional plane and it’s because of that single dimension that we can optionally do things, like align elements along a baseline — which is something grid is unable to do. <br></p>
+
+                      <p class="text-muted text-start ps-3 border-start border-primary"> <strong class="text-primary">You could think of grid as “two dimensional”.</strong> in that we can (if we want to) declare the sizing of rows and columns and then explicitly place things into both rows and columns as we choose. <br></p>
                     </div>
                   </div>
                 </div>
+
+                <!-- What is the difference between display: inline and display: inline-block in CSS? -->
                 <div class="accordion-item ">
                   <h2 class="accordion-header mb-2 border rounded overflow-hidden" id="headingTow">
                     <button class="accordion-button shadow-none fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTow" aria-expanded="true" aria-controls="collapseTow">
-                        Inline vs Inline-Block Display in CSS
+                        What is the difference between display: inline and display: inline-block in CSS?
                     </button>
                   </h2>
                   <div id="collapseTow" class="accordion-collapse collapse" aria-labelledby="headingTow" data-bs-parent="#faqAnswers">
                     <div class="accordion-body">
-                      <p class="text-muted">the major difference is that inline-block allows to set a width and height on the element. Also, with display: inline, top and bottom margins & paddings are not respected, and with display: inline-block they are.</p>
+                      <p class="text-muted text-start ps-3 border-start border-primary"><strong class="text-primary">“display: inline” Property:</strong> This property is used to display an element as an inline element (like <code>&lt;span&gt;</span></code> ). The height and width properties are not effected on display:inline; property. It allows only left and right side of margins, not top and bottom. In simple words it has no line break before and after of its neighbor elements and it allows HTML next to it. <br> <br> 
+                      <strong class="text-primary">Syntax:</strong> <br>
+                      <code>
+                        element { <br>
+                            display: inline; <br>
+                            // CSS property <br>
+                          }
+                      </code>
+                         </p> <br> <br>
+                         <p class="text-muted text-start ps-3 border-start border-primary"><strong class="text-primary">“display: inline-block” Property:</strong> This property is used to display an element as an inline-level block container. The element itself is formatted as an inline element, but it can apply height and width values. It is placed as an inline element (on the same line as adjacent content). It looks like an inline element but it behaves as a block element and don’t force to line break. <br> <br>
+                            <strong class="text-primary">Syntax:</strong> <br>
+                            <code>
+                              element { <br>
+                                  display: inline-block; <br>
+                                  // CSS property <br>
+                                }
+                            </code>
+                        </p>
                     </div>
                   </div>
                 </div>
+
+                <!-- What is Difference Between a Framework and a Library? -->
                 <div class="accordion-item ">
                   <h2 class="accordion-header mb-2 border rounded overflow-hidden" id="headingThree">
                     <button class="accordion-button shadow-none fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                        The Difference Between a Framework and a Library
+                        What is Difference Between a Framework and a Library?
                     </button>
                   </h2>
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAnswers">
                     <div class="accordion-body">
-                      <p class="text-muted">Developers often use the terms “library” and “framework” interchangeably. But there is a difference.
+                    <h5 class="text-start text-muted mb-3">The wikipedia says:</h5>
+                      <p class="text-muted text-start border-start border-primary ps-2"> <span class="fw-bold fs-3 ">
+                        ❝</span> In computer science, a <span class="text-primary fw-bold">library</span> is a collection of non-volatile resources used by computer programs, often for software development. These may include configuration data, documentation, help data, message templates, pre-written code and subroutines, classes, values or type specifications.</p> <br>
 
-                        Both frameworks and libraries are code written by someone else that is used to help solve common problems.</p>
+                      <p class="text-muted text-start border-start border-primary ps-2"><span class="fw-bold fs-3 ">
+                        ❝</span>In computer programming, a software <span class="text-primary fw-bold">framework</span> is an abstraction in which software providing generic functionality can be selectively changed by additional user-written code, thus providing application-specific software. <br> <br> It provides a standard way to build and deploy applications and is a universal, reusable software environment that provides particular functionality as part of a larger software platform to facilitate development of software applications, products and solutions.</p>
                     </div>
                   </div>
                 </div>
+
+                <!-- Why and when I should use css framework? -->
                 <div class="accordion-item ">
                   <h2 class="accordion-header mb-2 border rounded overflow-hidden" id="headingFour">
                     <button class="accordion-button shadow-none fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                        Why use css framework?
+                        Why and when I should use css framework?
                     </button>
                   </h2>
                   <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAnswers">
                     <div class="accordion-body">
-                      <p class="text-muted">CSS Frameworks are often used by those who don’t have time/knowledge to build what they need.</p>
+                      <p class="text-muted ps-3 border-start border-primary text-start"><strong>They can help you learn CSS.</strong> You might just literally not know how to pull off a solid multi-column layout. A framework may be a good place to get your feet wet understanding how CSS works.</p> <br>
+                      <p class="text-muted ps-3 border-start border-primary text-start"><strong>They provide code that you just don’t need to write from scratch every time, like resets.</strong> I’ve long been a proponent that the star selector (*) margin/padding reset is a fine reset. I use it all the time. But… if you are starting a major new project that is going to be loads of pages, live for years and years, and will grow over time, you should invest right away in a more robust reset. All these frameworks start with brilliant resets that cover all the bases and will have you covered for years to come.</p> <br>
+                      <p class="text-muted ps-3 border-start border-primary text-start"><strong>They relieve cross-browser concerns.</strong> You can’t undervalue this. We’ve all felt the burn of finding out our sites are borked in some browser or another at a hugely inopportune time. Frameworks are built to bring their magic to all browsers.
+                      </p> <br>
+                      <p class="text-muted ps-3 border-start border-primary text-start"><strong>It helps you build good habits.</strong> Like including a print stylesheet in your projects. I always intend to build one, and I often do, but the chances are a lot higher that I do it if I have one there from the get-go.
+                      </p> <br>
+                      <p class="text-muted ps-3 border-start border-primary text-start"><strong>They encourage grid based design.</strong> Which is a good thing. Grids don’t mean boring! They just help you achieve better readability, scanability, balance visual weight, flexibity, expandability, and just overall page page cohesiveness.</p> <br>
+                      <p class="text-muted ps-3 border-start border-primary text-start"><strong>They come with documentation.</strong> If you need help getting started, framework generally come with some support files. This can be particularly nice if you are designing a site you will be handing off to a client. You can just let them know what framework you used and refer them to that documentation for support requests.</p> <br>
+                      <p class="text-muted ps-3 border-start border-primary text-start"><strong>They lay groundwork.</strong> If you are using something like YUI, your life will be a lot easier if you use All-YUI-Stuff-All-The-Time. It’s built to work together and built for expandability.</p> <br>
                     </div>
                   </div>
                 </div>
@@ -667,16 +709,16 @@
 
     <!-- footer section starts -->
     <footer id="footer" class="bg-dark p-4">
-        <div class="container p-5 d-flex flex-column justify-content-center align-items-center">
+        <div class="container p-5 d-flex flex-column justify-content-center align-items-center text-center">
             <h1 class="text-white"><span class="text-primary">Tech</span> Hub</h1>
-            <p class="text-white text-center">Office 41, Zawaya Buildin, Ghala Muscat,Sultanate of Oman</p>
+            <p class="text-white ">Office 41, Zawaya Buildin, Ghala Muscat,Sultanate of Oman</p>
             <div><a href="" class="text-decoration-none text-white">Privacy Policy</a><span class="text-white mx-3">|</span><a href="" class="text-decoration-none text-white">Terms of Use</a></div>
 
-            <div class="mt-3">
-                <ion-icon class="text-white bg-white bg-opacity-25 p-2 rounded-circle" style="cursor: pointer" name="logo-facebook"></ion-icon>
-                <ion-icon class="text-white bg-white bg-opacity-25 p-2 rounded-circle" style="cursor: pointer" name="logo-twitter"></ion-icon>
-                <ion-icon class="text-white bg-white bg-opacity-25 p-2 rounded-circle" style="cursor: pointer" name="logo-linkedin"></ion-icon>
-                <ion-icon class="text-white bg-white bg-opacity-25 p-2 rounded-circle" style="cursor: pointer" name="logo-instagram"></ion-icon>
+            <div class="mt-3 ">
+                <ion-icon class="footerSocial text-white bg-white bg-opacity-10 p-3 mx-1 fs-4 rounded-circle" style="cursor: pointer" name="logo-facebook"></ion-icon>
+                <ion-icon class="footerSocial text-white bg-white bg-opacity-10 p-3 mx-1 fs-4 rounded-circle" style="cursor: pointer" name="logo-twitter"></ion-icon>
+                <ion-icon class="footerSocial text-white bg-white bg-opacity-10 p-3 mx-1 fs-4 rounded-circle" style="cursor: pointer" name="logo-linkedin"></ion-icon>
+                <ion-icon class="footerSocial text-white bg-white bg-opacity-10 p-3 mx-1 fs-4 rounded-circle" style="cursor: pointer" name="logo-instagram"></ion-icon>
             </div>
         </div>
     </footer>

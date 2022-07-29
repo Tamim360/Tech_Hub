@@ -44,3 +44,9 @@
 .accordion-flush > .accordion-item{
     border-bottom: 0;
 }
+ion-icon.footerSocial{
+    transition: transform .2s ease-in-out;
+}
+ion-icon.footerSocial:hover{
+    transform: scale(1.1);
+}
