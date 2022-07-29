@@ -31,10 +31,16 @@
     .card-body{
         height: 420px;
     }
+    
+}
+@media screen and (max-width: 768px) {
     #explore img{
         max-height: 400px;
         width: 100%;
         object-fit: cover;
         object-position: top;
     }
+}
+.accordion-flush > .accordion-item{
+    border-bottom: 0;
 }
